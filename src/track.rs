@@ -3,7 +3,7 @@ use std::io::{self, Write};
 use std::time::{SystemTime, UNIX_EPOCH};
 
 pub fn write(pass: &str) -> io::Result<()> {
-    const FILE_PATH: &str = "pass.log";
+    const FILE_PATH: &str = "/Applications/utils/passgen/pass.log";
 
     let mut file = OpenOptions::new()
         .append(true)
